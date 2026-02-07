@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tattoo</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&family=Viaoda+Libre&display=swap");
+
+            *,
+            body {
+                font-family: "Viaoda Libre";
+            }
+
+            .masked-img {
+                mask-image: url("assets/images/mask.png");
+                -webkit-mask-image: url("assets/images/mask.png");
+                /* width: 500px;
+                height: 975px; */
+                /* mask-repeat: no-repeat; */
+                object-fit: cover;
+                /* scale: 75%; */
+            }
+        </style>
+    </head>
+    <body>
+        <nav
+            class="flex flex-row justify-between items-center py-2 md:py-6 px-6 md:px-10 bg-[#2b2b2b]"
+        >
+            <a href="/index.html">
+                <img src="assets/images/logo.png" alt="" class="h-10" />
+            </a>
+
+            <ul class="flex items-center gap-6">
+                <li>
+                    <a
+                        href="/index.html"
+                        class="text-lg md:text-xl text-white hover:text-[#D73131]"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/designs.html"
+                        class="text-lg md:text-xl text-white hover:text-[#D73131]"
+                        >Designs</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/about.html"
+                        class="text-lg md:text-xl text-white hover:text-[#D73131]"
+                        >About</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <div
+            class="py-4 md:py-10 ps-2 md:ps-28 pe-2 md:pe-40 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0 relative"
+        >
+            <h1
+                class="font-black text-[6rem] md:text-[20rem] tracking-[10%] bg-gradient-to-r from-black to-white bg-clip-text text-transparent opacity-60 absolute top-84 md:top-30 left-4"
+            >
+                TATTOO
+            </h1>
+            <img
+                class="mask-[url(assets/images/mask-small.png)] md:mask-[url(assets/images/mask.png)] w-[287px] md:w-[500px] h-[465px] md:h-[975px] object-cover ms-auto md:ms-0 z-100"
+                src="https://imgproxy.domestika.org/unsafe/w:820/dpr:1/plain/src://content-items/013/799/931/annatigertitz_4%20copy-original.jpg?1685723348"
+                alt=""
+            />
+            <div
+                class="w-full md:w-2/7 z-100 mb-20 md:mb-0 text-end md:text-start"
+            >
+                <h3
+                    class="text-black font-black text-6xl line-through decoration-4 mb-6"
+                >
+                    Tattoo Studio
+                </h3>
+                <p class="text-xl tracking-wide mb-12">
+                    Lorem dolore quis cillum aliquip dolor culpa enim
+                    consectetur minim. Dolore eiusmod ea sint aliqua anim veniam
+                    aute aliqua commodo irure esse adipisicing aliquip anim.
+                </p>
+                <div
+                    class="w-fit ms-auto md:ms-0 bg-black text-white border hover:bg-white hover:text-black transition duration-500 text-4xl font-black tracking-wide py-4 px-10 rounded-full"
+                >
+                    BOOK NOW!
+                </div>
+            </div>
+            <img
+                src="assets/images/signature.png"
+                alt=""
+                class="absolute -bottom-30 w-40 md:w-60 left-2 md:left-10 animate-bounce"
+            />
+        </div>
+
+        <div
+            class="bg-[#2b2b2b] pt-42 pb-22 px-6 md:px-32 flex flex-col md:flex-row justify-between items-center gap-12 md:gap-0"
+        >
+            <div class="w-full md:w-2/7 text-white">
+                <h3 class="text-6xl mb-8">Various Designs</h3>
+                <p class="text-xl tracking-wide mb-16">
+                    Lorem dolore quis cillum aliquip dolor culpa enim
+                    consectetur minim. Dolore eiusmod ea sint aliqua anim veniam
+                    aute aliqua commodo irure esse adipisicing aliquip anim.
+                </p>
+                <a
+                    href="/designs.html"
+                    class="w-fit bg-white text-[#2b2b2b] border border-white hover:bg-transparent hover:text-white transition duration-500 text-4xl font-black tracking-wide py-4 px-18 rounded-full"
+                >
+                    DESIGNS
+                </a>
+            </div>
+
+            <div class="w-80 md:w-160 h-80 md:h-160 relative">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1723521603876-ff2c00537563?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="w-40 md:w-80 h-40 md:h-80 object-cover object-top rounded-full hover:scale-120 hover:rotate-10 hover:z-10 transition ease-in-out duration-500 absolute top-20 left-12 z-3"
+                />
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1665454931264-3ba0f241d538?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="w-40 md:w-80 h-40 md:h-80 object-cover rounded-full hover:scale-120 hover:rotate-10 hover:z-10 transition ease-in-out duration-500 absolute right-0 top-2 z-2"
+                />
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1679931608155-9a26a9dccd6a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="w-40 md:w-80 h-40 md:h-80 object-cover rounded-full hover:scale-120 hover:rotate-10 hover:z-10 transition ease-in-out duration-500 absolute right-0 bottom-2 z-1"
+                />
+            </div>
+        </div>
+
+        <div
+            class="py-20 md:py-40 px-10 md:px-20 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0"
+        >
+            <div class="w-full md:w-2/7">
+                <h3
+                    class="text-black font-black text-6xl line-through decoration-4 mb-18"
+                >
+                    Tattoo Cutlture
+                </h3>
+                <p class="text-xl tracking-wide mb-12">
+                    Lorem dolore quis cillum aliquip dolor culpa enim
+                    consectetur minim. Dolore eiusmod ea sint aliqua anim veniam
+                    aute aliqua commodo irure esse adipisicing aliquip anim.
+                </p>
+                <img
+                    src="https://images.unsplash.com/photo-1662524517381-b50838dd2e9b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="w-60 md:w-80 h-60 md:h-80 ms-auto md:ms-0 object-cover rounded-full"
+                />
+            </div>
+            <video class="height-full w-100 rounded-xl" controls>
+                <source src="assets/videos/tutorial.mp4" type="video/mp4" />
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <footer
+            class="flex flex-col md:flex-row justify-between items-center gap-12 md:gap-0 py-6 px-10 bg-[#2b2b2b]"
+        >
+            <div
+                class="flex flex-col md:flex-row items-start md:items-center gap-6"
+            >
+                <a href="" class="text-white text-xl"
+                    ><i class="fa-solid fa-phone me-2"></i>+8801123456789</a
+                >
+                <a href="" class="text-white text-xl"
+                    ><i class="fa-solid fa-at me-2"></i>johndoe@gmail.com</a
+                >
+                <a href="" class="text-white text-xl"
+                    ><i class="fa-solid fa-location-pin me-2"></i>Lion Shopping
+                    Complex, Kadomtoli, Keraniganj, Dhaka</a
+                >
+            </div>
+            <div class="flex flex-row items-center gap-6">
+                <a href="" class="text-white text-2xl hover:text-[#D73131]">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="text-white text-2xl hover:text-[#D73131]">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="text-white text-2xl hover:text-[#D73131]">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
